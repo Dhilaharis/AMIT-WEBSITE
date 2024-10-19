@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .main-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(12, 12, 252);
+            box-sizing: border-box;
+        }
+
+        .start-div p {
+            padding-top: 10px;
+            padding-left:20px;
+        }
+
+        .end-div {
+            display: flex;
+            gap: 20px;
+        }
+
+        .end-div p {
+            padding-top: 10px;
+            padding-right: 13px;
+        }
+        .top{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .banner{
+            background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url('{% static "images/main.jpeg" %}');
+            width: 100%;
+            height:50vh;
+            background-size: cover;
+            background-position: center;
+            font-weight: 900;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+    <div class="main-div text-light">
+        <div class="start-div">
+          <p>Monday - Saturday : 9am - 6pm</p>
+        </div>
+        <div class="end-div">
+          <p>9789224844 / 9840511458</p>
+          <p>athithmithra@gmail.com</p>
+          <p>icon</p>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Training</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Contact us</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="banner">
+
+    </div>
+</body>
+</html>
