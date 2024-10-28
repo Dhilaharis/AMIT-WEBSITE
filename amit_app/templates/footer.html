@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,27 +10,24 @@
             font-size: 2vh;
         }
         .bottom{
-            background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url("{% static 'images/foot.jpg' %}");
-            width: 100%;
-            /* height:80vh; */
+            background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url("{% static 'images/foot.jpg' %}");
+           
             background-size: cover;
-            background-position: center;
-            font-weight: 900;  
-            /* align-items: center;   */
-            height: 70vh;       
-            /* text-align:start; */
+            /* background-position: center; */
+            font-weight: 900;
         }
     </style>
 </head>
 <body>
-    <div class="bottom">
-        <div class="row " style="padding-left: 9%;">
-            <div class="col-md-3 pfoot">
+    <div class="bottom text-light container-fluid">
+        <br><br>
+        <div class="row" style="padding-left: 9%;">
+            <div class="col-md-3 col-sm-3 pfoot">
                 <h5>ATHITH MITHRA <br> Industrial Technologies</h5>
                 <p class="pfoot">No 7/2, SLB School South Road, <br>Ramavarmapuram, Nagercoil, <br>Kanyakumari District. <br>Tamilnadu, India-629001.</p>
             </div>
             
-            <div class="col-md-2 pfoot">
+            <div class="col-md-2 col-sm-2 pfoot">
                 <h5>LINKS</h5>
                 <p class="pfoot"><a href="">Home</a></p>
                 <p class="pfoot"><a href="">Products</a></p>
@@ -37,7 +35,7 @@
                 <p class="pfoot"><a href="">Training</a></p>
                 <p class="pfoot"><a href="">Contactus</a></p>
             </div>
-            <div class="col-md-4 ">
+            <div class="col-md-4 col-sm-4">
                 <h5>PRODUCTS</h5>
                 <p class="pfoot">DC Power supplies (5V, 12V, 15V, 24V, 36V, 48V)</p>
                 <p class="pfoot">Regulated Power Supplies (RPS)</p>
@@ -52,7 +50,7 @@
 
             </div>
             
-            <div class="col-md-3 ">
+            <div class="col-md-3  col-sm-3">
                 <p class="pfoot">AC Motor Drives</p>
                 <p class="pfoot">DC Motor Drives</p>
                 <p class="pfoot">Micro Controller</p>
