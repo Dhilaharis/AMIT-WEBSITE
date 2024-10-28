@@ -19,14 +19,17 @@
             box-sizing: border-box;
         }
 
-        /* .start-div p {
-            padding-top: 10px;
-            padding-left:20px;
-        } */
+        .start-div p {
+          box-sizing: border-box;
+        }
 
         .end-div {
             display: flex;
             gap: 20px;
+            box-sizing: border-box;
+        }
+        .dt{
+          font-size: 2vh;
         }
 
         /* .end-div p {
@@ -38,7 +41,15 @@
             top: 0;
             width: 100%;
         } */
-
+        @media only screen and (max-width: 600px) {
+          .dt {
+            text-align: center;
+            font-size: 10px;
+            display: flex;
+            justify-content: space-around;
+            
+          }
+      }
         
     </style>
 </head>
@@ -46,18 +57,19 @@
     <div class="top">
     <div class="main-div text-light">
       
-        <div class="start-div pt-2 pl-3">
+        <div class="start-div pt-2  pl-3 pb-0 mb-0">
           
-          <p>Monday - Saturday : 9am - 6pm</p>
+          <p class="dt">Monday - Saturday : 9am - 6pm</p>
         
         </div>
-        <div class="end-div pt-2 pr-3">
-          <p>9789224844 / 9840511458</p>
-          <p>athithmithra@gmail.com</p>
-          <p>icon</p>
+        <div class="end-div pt-2 pr-3 pb-0 mb-0">
+          <p class="dt">9789224844 / 9840511458</p>
+          <p class="dt">athithmithra@gmail.com</p>
+          <p class="dt">icon</p>
         </div>
       
       </div>
+      
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent p-2 ">
         <a class="navbar-brand pl-4" href="#">AMIT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,25 +78,25 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto pr-4">
             <li class="nav-item active">
-              <a class="nav-link " href="#">Home</a>
+              <a class="nav-link " href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Business</a>
+              <a class="nav-link " href="business">Business</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Projects</a>
+              <a class="nav-link " href="projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Products</a>
+              <a class="nav-link " href="products">Products</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="#">Gallery</a>
+                <a class="nav-link " href="gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Training</a>
+                <a class="nav-link " href="training">Training</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Contact us</a>
+                <a class="nav-link " href="contactus">Contactus</a>
               </li>
           </ul>
         </div>
