@@ -1,7 +1,9 @@
 {% extends "header.html" %}
 {% load static %}
 {% block content %}
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<head>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
 <style>
   
    .banner{
@@ -41,19 +43,7 @@
           width: 300px;
           height: 300px;
         }
-        @media only screen and (max-width: 600px) {
-          .inside{
-            width: 200px;
-            height: 200px;
-          }
-        .inside2{
-            position: absolute;
-            top: 10%;
-            left: 30%;
-            width: 200px;
-            height: 200px;
-        }
-        }
+        
         .aboutpara{
             text-indent: 60px;
         }
