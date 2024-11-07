@@ -39,15 +39,6 @@ background: rgb(12, 12, 252);
       height: 200px;
   }
   .ti1{
-    font-size: 30px;
-    
-  }
-  .ti2{
-    font-size: 30px;
-    
-  }
-  .ti3{
-    font-size: 30px;
-    
+    padding: 0;
   }
   }

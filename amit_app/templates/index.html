@@ -1,9 +1,9 @@
 {% extends "header.html" %}
 {% load static %}
 {% block content %}
-<head>
+<!-- <head>
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
+</head> -->
 <style>
   
    .banner{
@@ -17,7 +17,9 @@
             flex-direction: column; 
             justify-content: center;  
             /* align-items: center;   */
-            height: 70vh;            /* Full viewport height to center vertically */
+            height: 70vh; 
+            box-sizing: border-box;
+            padding: 50px;           
             /* text-align:start; */
            
             
@@ -29,20 +31,7 @@
             font-size: 2.5vh;
             text-align: justify;
         }
-        .side1{
-            position: relative;
-        }
-        .inside2{
-            position: absolute;
-            top: 10%;
-            left: 30%;
-            width: 300px;
-            height: 300px;
-        }
-        .inside{
-          width: 300px;
-          height: 300px;
-        }
+        
         
         .aboutpara{
             text-indent: 60px;
@@ -133,21 +122,21 @@ span.p:nth-child(6) {
   
 </style>
 <div class="banner text-light">
- <div class="pl-5 ">  
+ <div class="">  
 <span><h1>Welcome To</h1>
-<span class="mt-3 "><h1 class="ti1" style="font-size: 50px;font-weight: 900;"> ATHITH </h1></span>
-<span><h1 class="pl-3 ti1" style="font-size: 50px;font-weight: 900;">MITHRA</h1></span><br>
-<span><h3 class="ti2" style="font-size: 2vw;font-weight: 800;">Industrial </h3></span>
-<span><h3 class="pl-3 ti2" style="font-size: 2vw;font-weight: 800;">Technologies</h3></span> 
-<span><h3 class="pl-3 ti2" style="font-size: 2vw;font-weight: 800;"> Private</h3></span> 
-<span><h3 class="pl-3 ti2" style="font-size: 2vw;font-weight: 800;"> Ltd.</h3></span><br><br>
+<span class=""><h1 class="ti1" style="font-weight: 900;"> ATHITH </h1></span>
+<span><h1 class=" ti1" style="font-weight: 900;">MITHRA</h1></span><br>
+<span><h3 class="ti2" style="font-weight: 800;">Industrial </h3></span>
+<span><h3 class=" ti2" style="font-weight: 800;">Technologies</h3></span> 
+<span><h3 class=" ti2" style="font-weight: 800;"> Private</h3></span> 
+<span><h3 class=" ti2" style="font-weight: 800;"> Ltd.</h3></span><br><br>
 
 <i><span class="p ti3"><h3 style="font-size: 2vw;font-weight: 800;">POWER</h3></span>
-<span class="p pl-3 ti3"><h3 style="font-size: 2vw;font-weight: 800;"> ELECTRONICS</h3></span> 
-<span class="p pl-3 ti3"><h3 style="font-size: 2vw;font-weight: 800;">THAT</h3></span>
-<span class="p pl-3 ti3"><h3 style="font-size: 2vw;font-weight: 800;"> POWER</h3></span>
-<span class="p pl-3 ti3"><h3 style="font-size: 2vw;font-weight: 800;"> OUR</h3> </span>
-<span class="p pl-3 ti3"><h3 style="font-size: 2vw;font-weight: 800;">LIVES.</h3></span></i>
+<span class="p  ti3"><h3 style="font-size: 2vw;font-weight: 800;"> ELECTRONICS</h3></span> 
+<span class="p  ti3"><h3 style="font-size: 2vw;font-weight: 800;">THAT</h3></span>
+<span class="p  ti3"><h3 style="font-size: 2vw;font-weight: 800;"> POWER</h3></span>
+<span class="p  ti3"><h3 style="font-size: 2vw;font-weight: 800;"> OUR</h3> </span>
+<span class="p  ti3"><h3 style="font-size: 2vw;font-weight: 800;">LIVES.</h3></span></i>
 </div> 
 </div>
 <br><br>
@@ -163,15 +152,15 @@ span.p:nth-child(6) {
     <div class="row">
         <div class="col-md-6 col-sm-6">
             <h4 style="color: darkblue;font-size: 30px;"><b>Our Mission and Vision</b></h4><br> 
-            <p><span style="color: darkblue;font-weight: 700;">Vision: </span>AMIT strives to transform the world, bringing it closer to sustainable life by making clean energy affordable.</p><br>
-            <p><span style="color: darkblue;font-weight: 700;">Mission: </span>AMIT seeks to give quality and cost effective renewable systems that guide People towards sustainable living.</p>
+            <p><span style="color: darkblue;font-weight: 700;">Vision:</span> AMIT strives to transform the world, bringing it closer to sustainable life by making clean energy affordable.</p><br>
+            <p><span style="color: darkblue;font-weight: 700;">Mission: </span> AMIT seeks to give quality and cost effective renewable systems that guide People towards sustainable living.</p>
         </div>
         <div class="col-md-6 col-sm-6 side1">
             <center>
             <div class="inside" style="background: rgb(12, 12, 252);">
               
             </div>
-            <img class="inside2" src="" alt="" style="background: grey;">
+            <img class="inside2" src="{% static 'images/one.jpg' %}" alt="" >
             
         </center>
         </div>
@@ -184,10 +173,10 @@ span.p:nth-child(6) {
     <div class="row">
         <div class="col-md-6 col-sm-6 side1">
             <center>
-            <div class="inside" style="background: rgb(12, 12, 252);">
+            <div class="inside" >
                
             </div>
-            <img class="inside2" src="" alt="" style="background: grey;">
+            <img class="inside2" src="" alt="" >
         </center>
         </div>
         <div class="col-md-6 col-sm-6">
@@ -206,10 +195,10 @@ span.p:nth-child(6) {
         </div>
         <div class="col-md-6 col-sm-6 side1">
             <center>
-            <div class="inside" style="background: rgb(12, 12, 252);">
+            <div class="inside">
                 
             </div>
-            <img class="inside2" src="" alt="" style="background: grey;">
+            <img class="inside2" src="{% static 'images/three.jpg' %}" alt="">
         </center>
         </div>
 
