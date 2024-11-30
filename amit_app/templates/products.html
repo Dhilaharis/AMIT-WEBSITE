@@ -2,11 +2,17 @@
 {% load static %}
 {% block content %}
 <style>
+  body{
+        background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("{% static 'images/HOM2.jpg' %}");
+            width: 100%;
+            height: 100%;
+            /* height:80vh; */
+            background-size: cover;
+            background-position: center;
+          background-attachment: fixed;
+    }
     .prod-banner{
-    background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url("");
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+   
     font-weight: 900;
     display: flex;
     flex-direction: column; 
@@ -38,6 +44,8 @@
    </div> 
 </div>
 <br><br>
+<div class="container-fluid bg-light">
+  <br><br>
 <div class="container" style="display: flex;flex-wrap: wrap;justify-content:space-around;">
             <div class="card " style="width: 18rem;">
                 <img class="card-img-top" style="height: 200px;" src="{% static 'images/DC POWER SUPPLY.jpg' %}" alt="Card image cap">
@@ -191,9 +199,10 @@
                 </div>
               </div>    
 </div>
-
 <br><br>
-<div class="container-fluid">
-{% include 'footer.html' %} 
 </div>
+
+
+{% include 'footer.html' %} 
+
 {% endblock %}

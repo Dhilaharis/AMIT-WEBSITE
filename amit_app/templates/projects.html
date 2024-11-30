@@ -2,11 +2,17 @@
 {% load static %}
 {% block content %}
 <style>
+        body{
+        background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("{% static 'images/HOM2.jpg' %}");
+            width: 100%;
+            height: 100%;
+            /* height:80vh; */
+            background-size: cover;
+            background-position: center;
+          background-attachment: fixed;
+    }
 .pro-banner{
-        background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url("");
-        width: 100%;
-        background-size: cover;
-        background-position: center;
+        
         font-weight: 900;
         display: flex;
         flex-direction: column; 
@@ -34,7 +40,9 @@
    </div> 
 </div>
 <br><br>
+<div class="container-fluid bg-light">
 <div class="container">
+        <br><br>
         <div>
                 <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">Projects</h1>
             </div>
@@ -156,9 +164,10 @@
 
 
 </div>
-
-<br><br><br>
-<div class="container-fluid">
-{% include 'footer.html' %} 
+<br><br>
 </div>
+
+
+{% include 'footer.html' %} 
+
 {% endblock %}

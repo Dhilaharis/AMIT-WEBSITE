@@ -5,24 +5,27 @@
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head> -->
 <style>
-  
-   .banner{
-            background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url("{% static 'images/head.jpg' %}");
+  body{
+    background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("{% static 'images/HOM.jpg' %}");
             width: 100%;
+            height: 100%;
             /* height:80vh; */
             background-size: cover;
             background-position: center;
+          background-attachment: fixed;
+  }
+  
+   .banner{
             font-weight: 900;
             display: flex;
             flex-direction: column; 
             justify-content: center;  
             /* align-items: center;   */
-            height: 70vh; 
+            height: 80vh; 
             box-sizing: border-box;
             padding: 50px;           
             /* text-align:start; */
-           
-            
+               
         } 
         p{
             line-height: 200%;
@@ -121,7 +124,7 @@ span.p:nth-child(6) {
 }
   
 </style>
-<div class="banner text-light">
+<div class="banner text-light ">
  <div class="">  
 <span><h1>Welcome To</h1>
 <span class=""><h1 class="ti1" style="font-weight: 900;"> ATHITH </h1></span>
@@ -140,8 +143,9 @@ span.p:nth-child(6) {
 </div> 
 </div>
 <br><br>
-<div class="container">
-    <div>
+<div class="container-fluid bg-light">
+  <br><br>
+    <div class="container ">
         <h4 style="font-size: 30px;font-weight: 700;">ABOUT AMIT</h4><br>
         <h4 style="color: darkblue;font-size: 30px;"><b>We Provide Top Industrial Services</b></h4><br>
         <p class="aboutpara">Athith Mithra Industrial Technologies (AMIT) Private Limited manufactures a wide range of electronics components such as Resistor, Inductor, Capacitor, Diodes, electronic switches, Electronic Cables (RMC Cable), Driver Circuit, Small rating Transformer, Micro Controller (Arduino, PIC, DSPIC, Raspberry), Digital Signal Processor (DSP), Field Programmable Gate Array Controller (FPGA) and Artificial Intelligence based Robotics applications.</p>
@@ -149,6 +153,7 @@ span.p:nth-child(6) {
         <p class="aboutpara">AMIT shares the real time Industrial knowledge by conducting In-Plant Training and Internship to the students across various disciplines.</p>
     </div>
     <br><br>
+    <div class="container">
     <div class="row">
         <div class="col-md-6 col-sm-6">
             <h4 style="color: darkblue;font-size: 30px;"><b>Our Mission and Vision</b></h4><br> 
@@ -165,7 +170,9 @@ span.p:nth-child(6) {
         </center>
         </div>
     </div>
+  </div>
     <br><br><br><br>
+    <div class="container">
     <div>
         <h4 style="font-size: 30px;font-weight: 700;">OUR SERVICES</h4><br>
         <h4 style="color: darkblue;font-size: 30px;"><b>Leading Innovation in Solar Inverters, Power Supplies, IoT Systems & Automation</b></h4><br><br> 
@@ -184,7 +191,9 @@ span.p:nth-child(6) {
             <p>At AMIT, we are pioneers in the field of advanced energy solutions and electronics. With a rich portfolio that spans Solar Inverters, regulated power supplies, cutting-edge electronic components, and next-generation IoT systems, we serve industries and homes alike with reliable and innovative technology. Our commitment to quality and efficiency drives us to deliver state-of-the-art solutions for the modern world.</p>
         </div>
     </div>
+  </div>
     <br><br><br><br>
+    <div class="container">
     <div>
         <h4 style="color: darkblue;font-size: 30px;"><b>Powering the Future of Technology</b></h4><br> 
     </div>
@@ -203,7 +212,9 @@ span.p:nth-child(6) {
         </div>
 
     </div>
+  </div>
     <br><br><br><br>
+    <div class="container">
     <div>
         <h4 style="color: darkblue;font-size: 30px;"><b>AMIT: Director Profile</b></h4><br>
         <p class="aboutpara">Mr. K.S.Kavin, is one of the Directors of Athith Mithra Industrial Technologies (AMIT) Pvt Ltd. He has about three years of teaching experience as Assistant Professor and about 12 years of industrial experience as R&D Engineer in the field of Power Electronics. He is currently pursuing his PhD in Grid tied Electric Vehicle without energy storage system. He is the founder of AMIT Pvt Ltd Company and is actively engaged with it. He is responsible for the overall working of the Company and is instrumental in making strategic decisions for the Company. Besides this, Mr.K.S.KAVIN is an academically strong individual and actively publishes research papers. He currently has more than 25 research papers published in various renowned journals in various Engineering disciplines. He can be reached at kavinksk@gmail.com.</p><br>
@@ -218,6 +229,7 @@ span.p:nth-child(6) {
 
 </div>
 <br><br>
+</div>
 
 {% include 'footer.html' %} 
 
