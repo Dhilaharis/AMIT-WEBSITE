@@ -53,11 +53,16 @@
     <h1 class="text-center" style="font-size: 30px;font-weight: 700">We Are Here For You</h1>
     <br>
     <p style="text-indent: 50px;"> Got a project in mind? We’d love to hear about it. Take five minutes to fill out our project form so that we can get to know you and understand your project.</p>
-    <br><br>
-    <!-- <div style="display: flex;flex-wrap: wrap;justify-content:space-around;">
+    <!-- <br><br>
+    <div style="display: flex;flex-wrap: wrap;justify-content:space-around;">
        
-        <div style="width: 300px;height: 150px;border: 3px solid #0745e5;border-radius: 10px;padding: 5px;" >
+        <div style="border: 3px solid #0745e5;border-radius: 10px;padding: 5px;" >
+            <center>
+                <i style="color: #071293;width: 60px;height: 60px;" class="fa-solid fa-location-dot"></i><br>
+                <h3>OUR ADDRESS</h3><br>
+                <p>No 7/2, SLB School South Road, <br>Ramavarmapuram, Nagercoil, <br>Kanyakumari District. <br>Tamilnadu, India-629001.</p>
 
+            </center>
         </div>
         <div style="width: 300px;height: 150px;border: 3px solid #0745e5;border-radius: 10px;padding: 5px;" >
 
@@ -79,21 +84,26 @@
 <center>
 <form method="post" action="{% url 'sendmail' %}">
     {% csrf_token %}
-   <div style="display: flex;justify-content: center;flex-wrap: wrap;">
-        <div class="form-group">
+   <div style="" class="row">
+    <div class="col"></div>
+        <div class="form-group col" >
             <input class="form-control form-control-lg" id="subject" name="subject" style="width: 300px;" placeholder="Subject">
         </div>
-        <div class="form-group">
+        <div class="form-group col" >
             <input class="form-control form-control-lg" id="name" name="name"style="width: 300px;" placeholder="Name">
         </div>
+        <div class="col"></div>
     </div>
-    <div style="display: flex;justify-content: center;flex-wrap: wrap;">
-        <div class="form-group">
+    <div style="" class="row">
+        <div class="col"></div>
+        <div class="form-group col" >
             <input class="form-control form-control-lg" id="phone" name="phone" style="width: 300px;" placeholder="Phone">
         </div>
-        <div class="form-group">
+        
+        <div class="form-group col" class="">
             <input class="form-control form-control-lg" id="email" name="email" style="width: 300px;" placeholder="Email">
         </div>
+        <div class="col"></div>
     </div>
         <div class="form-group">
         <textarea class="form-control form-control-lg "  id="message" name="message"  rows="4" cols="50" placeholder="Your Message"></textarea>
